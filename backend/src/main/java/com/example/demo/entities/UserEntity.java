@@ -2,26 +2,36 @@ package com.example.demo.entities;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tb_user")
 public class UserEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
 	private String name;
 	
 	public UserEntity() {
 	}
 
-	public UserEntity(Integer id, String name) {
+	public UserEntity(Long id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

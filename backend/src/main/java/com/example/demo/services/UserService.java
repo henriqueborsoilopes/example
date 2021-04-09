@@ -1,11 +1,13 @@
 package com.example.demo.services;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.example.demo.dto.UserDTO;
 import com.example.demo.entities.UserEntity;
 import com.example.demo.repositories.UserRepository;
 
@@ -16,9 +18,9 @@ public class UserService {
 	private UserRepository userRepository;
 	
 	@Transactional(readOnly = true)
-	public List<UserEntity> list() {
+	public List<UserDTO> list() {
 		List<UserEntity> users = userRepository.findAll();
-		return users;
+		return users.stream().map(x -> new UserDTO(x)).collect(Collectors.toList());
 	}
 	
 	@Autowired

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.UserDTO;
 import com.example.demo.entities.UserEntity;
 import com.example.demo.services.UserService;
 
@@ -18,8 +19,8 @@ public class UserController {
 	private UserService userService;
 	
 	@GetMapping
-	public List<UserEntity> list() {
-		List<UserEntity> list = userService.list();
-		return list;
+	public List<UserDTO> list() {
+		List<UserDTO> listDTO = userService.list();
+		return listDTO;
 	}
 }

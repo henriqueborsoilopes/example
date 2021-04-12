@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Ventrue() {
@@ -8,6 +9,7 @@ export default function Ventrue() {
             <div className="container" id="bodyVentrue">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

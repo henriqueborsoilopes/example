@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Rodape from '../../../rodapé';
 import './styles.css';
 
 export default function Idependentes() {
@@ -9,7 +10,7 @@ export default function Idependentes() {
             <div className="container" id="bodyIdependentes">
                 <div className="row">
                     <div className="col">
-                        <Link to="/assamistas">Assamistas</Link>
+                        <Link to="/assamitas">Assamitas</Link>
                     </div>
                     <div className="col">
                         <Link to="/giovanni">Giovanni</Link>
@@ -22,6 +23,7 @@ export default function Idependentes() {
                     </div>
                 </div>
             </div>
+            <Rodape/>
         </>
     );
 }

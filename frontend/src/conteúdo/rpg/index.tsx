@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../rodapé';
 import './styles.css';
 
 export default function RPG() {
@@ -8,6 +9,7 @@ export default function RPG() {
             <div className="container" id="bodyRPG">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

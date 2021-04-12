@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Giovanni() {
@@ -8,6 +9,7 @@ export default function Giovanni() {
             <div className="container" id="bodyGiovanni">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

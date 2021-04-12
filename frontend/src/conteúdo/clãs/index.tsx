@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Rodape from '../../rodapé';
 import './styles.css';
 
 export default function Clans() {
@@ -19,6 +20,7 @@ export default function Clans() {
                     </div>
                 </div>
             </div>
+            <Rodape/>
         </>
     );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Brujah() {
@@ -8,6 +9,7 @@ export default function Brujah() {
             <div className="container" id="bodyBrujah">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

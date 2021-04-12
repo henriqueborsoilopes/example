@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Nosferatu() {
@@ -8,6 +9,7 @@ export default function Nosferatu() {
             <div className="container" id="bodyNasferatu">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

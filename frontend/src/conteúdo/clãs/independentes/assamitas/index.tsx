@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Assamitas() {
@@ -8,6 +9,7 @@ export default function Assamitas() {
             <div className="container" id="bodyAssamitas">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

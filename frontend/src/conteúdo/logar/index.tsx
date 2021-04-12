@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../rodapé';
 import './styles.css';
 
 export default function Logar() {
@@ -8,6 +9,7 @@ export default function Logar() {
             <div className="container" id="bodyLogar">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

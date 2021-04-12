@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Cabecalho from "./cabeçalho";
 import Cadastrar from "./conteúdo/cadastrar";
-import Rodape from "./rodapé";
 import Inicio from "./conteúdo/início";
 import RPG from "./conteúdo/rpg";
 import Clans from "./conteúdo/clãs";
@@ -28,7 +27,7 @@ export default function Routes() {
         <BrowserRouter>
             <Cabecalho/>
             <Switch>
-                <Route path="/">
+                <Route path="/inicio">
                     <Inicio/>
                 </Route> 
                 <Route path="/rpg">
@@ -52,7 +51,7 @@ export default function Routes() {
                 <Route path="/idependentes">
                     <Idependentes/>
                 </Route>
-                <Route path="/brujas">
+                <Route path="/brujah">
                     <Brujah/>
                 </Route> 
                 <Route path="/ventrue">
@@ -92,7 +91,6 @@ export default function Routes() {
                     <Giovanni/>
                 </Route>
             </Switch>
-            <Rodape/>
         </BrowserRouter>
     )
 }

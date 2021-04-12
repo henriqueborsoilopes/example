@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Malkavian() {
@@ -8,6 +9,7 @@ export default function Malkavian() {
             <div className="container" id="bodyMalkavian">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../../../rodapé';
 import './styles.css';
 
 export default function Lasombra() {
@@ -8,6 +9,7 @@ export default function Lasombra() {
             <div className="container" id="bodyLasombra">
                 
             </div>
+            <Rodape/>
         </>
     );
 }

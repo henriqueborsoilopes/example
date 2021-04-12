@@ -1,4 +1,5 @@
 import React from 'react';
+import Rodape from '../../rodapé';
 import './styles.css';
 
 export default function Inicio() {
@@ -9,6 +10,7 @@ export default function Inicio() {
                 
                 
             </div>
+            <Rodape/>
         </>
     );
 }

@@ -1,24 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
-import { allUsers } from "./Api"
-import { UserAtr } from "./types"
-import { toast } from 'react-toastify';
+import Routes from './Routes';
 
 export default function App() {
 
-  const [ user, setUser ] = useState<UserAtr[]>([]);
-
-  useEffect(() => {
-    allUsers()
-    .then(response => setUser(response.data))
-        .catch( () => {
-          toast.warning('Erro ao listar users');
-        })
-  }, [])
-  console.log(user);
-
   return (
     <div>
+      <>
+        <Routes/>
+        <ToastContainer />
+      </>
     </div>
   );
 }

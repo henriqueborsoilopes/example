@@ -1,0 +1,83 @@
+.home-cabecalho{
+    background-color: #000000;
+    height: 70px;  
+}
+
+.h1-titulo-left{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    color: #000000;
+    padding-left: 150px;
+}
+
+
+.h1-titulo-right{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    color: #000000;
+    padding-right: 200px;
+}
+
+.div-cabecalho-left{
+    text-align: left;
+    float: left;
+    padding-left: 300px;
+}
+
+.div-cabecalho-center{
+    width: 120px;
+    height: 120px;
+    overflow-block: inherit;
+    padding-left: 50px;
+    background: #000000;
+}
+
+.vampiro-logo{
+    width: 150px;
+    height: 150px;
+    padding-left: 100px;
+}
+
+.div-cabecalho-right{
+    text-align: right;
+    float: right;
+    padding-right: 300px;
+}
+
+.home-navbar{
+   padding-bottom: 100px;
+
+}
+
+.navbar-item{
+    color: #f8f0f0;
+    text-decoration: none;
+}
+
+.div-right{
+    width: 144px;
+    height: 550px;
+    background: #C4C4C4;
+}
+
+.div-left{
+    width: 144px;
+    height: 550px;
+    background: #C4C4C4;
+    
+}
+
+.img-body{
+    width: 100%;
+    height: auto;
+}
+
+.rodape{
+    height: 70px;
+}

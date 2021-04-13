@@ -23,14 +23,10 @@ public class UserService {
 		return users.stream().map(x -> new UserDTO(x)).collect(Collectors.toList());
 	}
 	
-	@Autowired
-	public UserEntity insert() {
-		UserEntity user1 = new UserEntity(null, "Ricador");
-		UserEntity user2 = new UserEntity(null, "Ricador");
-		UserEntity user3 = new UserEntity(null, "Ricador");
-		user1 = userRepository.save(user1);
-		user2 = userRepository.save(user2);
-		user3 = userRepository.save(user3);
+	@Transactional
+	public UserDTO insert(UserDTO dto){
+		UserEntity user = new UserEntity(null, dto.getName(), dto.getEmail(), dto.getPassword());
+		user = userRepository.save(user);
 		return null;
 	}
 

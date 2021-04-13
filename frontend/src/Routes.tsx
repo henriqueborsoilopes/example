@@ -27,9 +27,6 @@ export default function Routes() {
         <BrowserRouter>
             <Cabecalho/>
             <Switch>
-                <Route path="/inicio">
-                    <Inicio/>
-                </Route> 
                 <Route path="/rpg">
                     <RPG/>
                 </Route>
@@ -89,6 +86,9 @@ export default function Routes() {
                 </Route>
                 <Route path="/giovanni">
                     <Giovanni/>
+                </Route>
+                <Route path="/">
+                    <Inicio/>
                 </Route>
             </Switch>
         </BrowserRouter>

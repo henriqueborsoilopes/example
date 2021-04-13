@@ -18,7 +18,7 @@ export default function Cabecalho() {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <Link to="/inicio" className="">Início</Link>
+                        <Link to="/" className="">Início</Link>
                     </div>
                     <div className="col">
                         <Link to="/rpg" className="">RPG</Link>
